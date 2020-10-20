@@ -20,6 +20,9 @@ body{
     padding-top: 4.1rem;
     padding-bottom: 4.1rem;
 
+    &__burger{
+        display: none;
+    }
     &__links{
         width: 100%;
         max-width: 378px;
@@ -37,6 +40,9 @@ body{
         margin-right: 0.1rem;
         & > a{
             text-decoration: none;
+            &:hover{
+                border-bottom: solid $VeryDarkBlue 1px;
+            }
         }
         &--disable{
             margin-left: 3rem;
@@ -130,6 +136,10 @@ body{
                         letter-spacing: 0.06em;
                         color: #FFFFFF;
                         background-color: $Red;
+                        
+                        &:hover{
+                            background-color: $redHover;
+                        }
                     }
                     
                     &__info{
@@ -156,4 +166,80 @@ aside{
 }
 .attribution{
     text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+
+    .menu-nav{
+
+        padding-left: 1.95rem;
+        padding-right: 1.95rem;
+        padding-top: 2.3rem;
+        padding-bottom: 2.3rem;
+        &__logo{
+            width: 24px;
+        }
+        &__burger{
+            display: block;
+            margin-right: 0.1rem;
+        }
+
+        &__links{
+            background-color: #FFFFFF;
+            margin:auto;
+            width: 80vw;
+            -webkit-box-shadow: -2px 11px 28px -1px rgba(0,0,0,0.38);
+            -moz-box-shadow: -2px 11px 28px -1px rgba(0,0,0,0.38);
+            box-shadow: -2px 11px 28px -1px rgba(0,0,0,0.38);
+            z-index: 2;
+            position: absolute;
+            text-align: center;
+            //display: none;
+            flex-direction: column;
+        }
+    }
+
+    .section{
+        padding-left: 1.95rem;
+        padding-right: 1.95rem;
+        padding-top: 1rem;
+        flex-direction: column-reverse;
+        height: auto;
+
+        &__article{
+            .article{
+
+                &__title{
+                    font-size: 2.3em;
+                }
+
+                &__text{
+                    margin-top: 0.8rem;
+                }
+
+                &__btn-group{
+                    margin-top: 1rem;
+                    margin-bottom: 10rem;
+                    .btn-group{
+                        &__btn{
+                            padding-top: 0.5em;
+                            padding-bottom: 0.5em;
+                            font-size: 0.8em;
+                        }
+
+                        &__info{
+                            font-size: 0.8em;
+                            letter-spacing: 0.1px;
+                            
+                        }
+                    }
+                }
+            }
+        }
+        &__image{
+            left: -1.95em;
+            top: 1.5rem;
+            width: 134vw;
+        }
+    }
 }

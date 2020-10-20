@@ -29,6 +29,10 @@ body {
   padding-bottom: 4.1rem;
 }
 
+.menu-nav__burger {
+  display: none;
+}
+
 .menu-nav__links {
   width: 100%;
   max-width: 378px;
@@ -55,6 +59,10 @@ body {
 
 .menu-nav__link > a {
   text-decoration: none;
+}
+
+.menu-nav__link > a:hover {
+  border-bottom: solid #242942 1px;
 }
 
 .menu-nav__link--disable {
@@ -165,6 +173,10 @@ body {
   background-color: #ff5c5c;
 }
 
+.section__article .article__btn-group .btn-group__btn:hover {
+  background-color: #FF8584;
+}
+
 .section__article .article__btn-group .btn-group__info {
   color: #a0a1ac;
   font-family: "Barlow Condensed";
@@ -186,5 +198,69 @@ aside {
 
 .attribution {
   text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+  .menu-nav {
+    padding-left: 1.95rem;
+    padding-right: 1.95rem;
+    padding-top: 2.3rem;
+    padding-bottom: 2.3rem;
+  }
+  .menu-nav__logo {
+    width: 24px;
+  }
+  .menu-nav__burger {
+    display: block;
+    margin-right: 0.1rem;
+  }
+  .menu-nav__links {
+    background-color: #FFFFFF;
+    margin: auto;
+    width: 80vw;
+    -webkit-box-shadow: -2px 11px 28px -1px rgba(0, 0, 0, 0.38);
+    box-shadow: -2px 11px 28px -1px rgba(0, 0, 0, 0.38);
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section {
+    padding-left: 1.95rem;
+    padding-right: 1.95rem;
+    padding-top: 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: auto;
+  }
+  .section__article .article__title {
+    font-size: 2.3em;
+  }
+  .section__article .article__text {
+    margin-top: 0.8rem;
+  }
+  .section__article .article__btn-group {
+    margin-top: 1rem;
+    margin-bottom: 10rem;
+  }
+  .section__article .article__btn-group .btn-group__btn {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 0.8em;
+  }
+  .section__article .article__btn-group .btn-group__info {
+    font-size: 0.8em;
+    letter-spacing: 0.1px;
+  }
+  .section__image {
+    left: -1.95em;
+    top: 1.5rem;
+    width: 134vw;
+  }
 }
 /*# sourceMappingURL=main.css.map */
