@@ -1,1 +1,159 @@
 @import 'colors';
+
+body{
+    font-family: "Barlow";
+    font-weight: 400;
+    font-size: 18px;
+}
+.container{
+    max-width: 1440px;
+    margin: auto;
+}
+
+.menu-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10.3rem;
+    padding-right: 10.3rem;
+    padding-top: 4.1rem;
+    padding-bottom: 4.1rem;
+
+    &__links{
+        width: 100%;
+        max-width: 378px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: "Barlow Condensed" ;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 0.86em;
+        letter-spacing: 0.05rem;
+    }
+
+    &__link{
+        margin-right: 0.1rem;
+        & > a{
+            text-decoration: none;
+        }
+        &--disable{
+            margin-left: 3rem;
+            & > a{
+                color: $GrayishBlue;
+            }
+        }
+    }
+    &__background{
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 49%;
+        height: 26.8rem;
+        border-bottom-left-radius: 3.5rem;
+        background-color: $LightGrayishBlue;
+    }
+}
+
+.section{
+    padding-left: 10.3rem;
+    padding-right: 10.3rem;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    height: 100vh;
+    &__article{
+        display: inline;
+        width: 100%;
+        margin-top: 6.2rem;
+
+        .article{      
+            &__new{
+                padding: 0.6rem;
+                padding-top: 0.21rem;
+                padding-bottom: 0.21rem;
+                margin-right: 0.44rem;
+                border-radius: 10rem;
+                color: #FFFFFF;
+                background-color: $VeryDarkBlue;
+                font-family: "Barlow Condensed";
+                font-weight: 700;
+                font-size: 1.05em;
+                letter-spacing: 0.08rem;
+            }
+
+            &__hover-title{
+                font-family: "Barlow Condensed";
+                font-size: 0.8em;
+                letter-spacing: 0.325rem;
+                color: $GrayishBlue;
+                text-transform: uppercase;
+            }
+
+            &__title{
+                margin-top: 1.4rem;
+                font-size: 4rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: $VeryDarkBlue;
+                font-family: "Barlow Condensed";
+            }
+
+            &__text{
+                margin-top: 2rem;
+                color: $DarkGrayishBlue;
+                font-size: 1.02em;
+                line-height: 1.45em;
+                width: 100%;
+                max-width: 280px;
+            }
+
+            &__btn-group{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-top: 3.9rem;
+                .btn-group{
+                    
+                    &__btn{
+                        border-radius: 6px;
+                        padding: 0.99em;
+                        padding-left: 2em;
+                        padding-right: 2em;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        font-family: "Barlow Condensed";
+                        font-size: 0.9em;
+                        font-weight: 700;
+                        letter-spacing: 0.06em;
+                        color: #FFFFFF;
+                        background-color: $Red;
+                    }
+                    
+                    &__info{
+                        color: $GrayishBlue;
+                        font-family: "Barlow Condensed";
+                        margin-left: 1.4rem;
+                        font-size: 0.9em;
+                        letter-spacing: 0.13em;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            
+        }
+    }
+    &__image{
+        position: relative;
+        right: -1.75rem;
+        top: 3.05rem;
+    }
+}
+aside{
+    width: 50%;
+}
+.attribution{
+    text-align: center;
+}
