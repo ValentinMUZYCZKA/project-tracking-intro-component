@@ -9,12 +9,14 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/main.css">
   <title>Frontend Mentor | Project tracking intro component</title>
+  <script src="./bower_components/gsap/dist/gsap.min.js"></script>
+  <script src="./js/main.js" defer></script>
 </head>
 
 <body>
   <div class="container">
     <nav class="menu-nav">
-      <img src="./asset/images/logo.svg" alt="logo of the enterpriss" class="menu-nav__logo">
+      <img src="./asset/images/logo.svg" alt="logo of the enterprise" class="menu-nav__logo">
       <img class="menu-nav__burger" src="./asset/images/icon-hamburger.svg" alt="Burger menu icon">
       <ul class="menu-nav__links">
         <li class="menu-nav__link"><a href="#">Product</a></li>
@@ -25,23 +27,24 @@
     </nav>
     <div class="menu-nav__background"></div>
     <section class="section">
-      <article class="section__article">
-        <p class="article__hover-title"><span class="article__new">New</span> Monograph Dashboard</p>
+      <div class="section__article">
+        <span class="article__new">New</span> 
+        <p class="article__hover-title">Monograph Dashboard</p>
         <h1 class="article__title">Powerful insights into your team</h1>
         <p class="article__text">Project planning and time tracking for agile teams</p>
         <div class="article__btn-group">
           <a href="" class="btn-group__btn">Schedule a demo</a>
           <p class="btn-group__info">to see a live preview</p>
         </div>
-      </article>
+      </div>
       <aside>
-        <img class="section__image"  src="./asset/images/illustration-devices.svg" alt="">
+        <img class="section__image"  src="./asset/images/illustration-devices.svg" alt="a screen and a smartphone draw">
       </aside>
     </section>
     <footer>
       <p class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Your Name Here</a>.
+        Coded by <a href="#">Valentin MUZYCZKA</a>.
       </p>
     </footer>
   </div>
