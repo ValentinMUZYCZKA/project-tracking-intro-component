@@ -7,7 +7,9 @@ var menuBurgerElements = [].slice.call(document.getElementsByClassName('menu-nav
 if (window.matchMedia("(max-width: 400px)").matches) {
   document.getElementsByClassName("menu-nav__burger")[0].addEventListener('click', menuBurgerAnimation);
 } else {
-  timeline.from('.menu-nav__background', 0.6, {
+  timeline.to('body', 0.1, {
+    display: 'block'
+  }).from('.menu-nav__background', 0.6, {
     opacity: 0,
     y: -500,
     ease: Elastic.easeOut.config(0.8, 0.30)
