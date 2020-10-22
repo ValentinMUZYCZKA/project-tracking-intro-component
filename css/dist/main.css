@@ -39,6 +39,7 @@ body {
   margin-right: 0.1rem;
 }
 .menu-nav__link > a {
+  color: #242942;
   text-decoration: none;
 }
 .menu-nav__link > a:hover {

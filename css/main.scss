@@ -40,6 +40,7 @@ body{
     &__link{
         margin-right: 0.1rem;
         & > a{
+            color :$VeryDarkBlue;
             text-decoration: none;
             &:hover{
                 border-bottom: solid $VeryDarkBlue 1px;
